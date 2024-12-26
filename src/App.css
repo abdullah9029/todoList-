@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.FooterRect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.notesStyle {
+  padding: 10px;
+  margin: 10px 0;
+  border-bottom: 1px solid #6c63ff;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.notesListSyle {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.inputStyle {
+  width: 20px;
+  height: 20px;
+  accent-color: #6c63ff;
+  cursor: pointer;
+}
+
+.newNoteDiv {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.borderDiv {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.searchImgDiv {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.CancelBtnDiv {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+.CancelBtn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  height: 38px;
+  width: 97px;
+  display: flex;
+  justify-content: center;
+}
+.cancelBtnText {
+  color: "#6C63FF";
+  font-family: "Kanit";
+  font-size: "18px";
+  margin: 0;
+}
+.Applybtn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6c63ff;
+  color: #fff;
+  height: 38px;
+  width: 97px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kanit", sans-serif; /* Add a fallback font */
+}
+.addBtnDiv {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.addBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
