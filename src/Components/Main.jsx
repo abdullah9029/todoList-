@@ -6,18 +6,19 @@ import Detective from "../images/Detective.png";
 import chevrenTop from "../images/chevron-top.png";
 import searchIcon from "../images/Vector (2).png";
 
-function Footer() {
+function Main() {
   const [showRectangle, setShowRectangle] = useState(false);
   const [notes, setNotes] = useState([]);
   const [newNote, setNewNote] = useState("");
   const [showImg, setShowImg] = useState(true);
   const [checkedNotes, setCheckedNotes] = useState({});
   const [searchTerm, setSearchTerm] = useState("");
-  const [showOptions, setShowOptions] = useState({});
   const [editingIndex, setEditingIndex] = useState(null);
+  const [showOptions, setShowOptions] = useState({});
 
   const ButtonTapped = () => {
     setShowRectangle(true);
+    setEditingIndex(null);
   };
 
   const handleCancel = () => {
@@ -175,7 +176,11 @@ function Footer() {
               <button
                 onClick={() => toggleOptions(index)}
                 className="options-button"
-                style={{ background: "none", border: "none", cursor: "pointer" }}
+                style={{
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                }}
               >
                 ⋮
               </button>
@@ -280,4 +285,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Main;
